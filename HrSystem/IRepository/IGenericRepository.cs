@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using HrSystem.DTOs;
 
 namespace HrSystem.IRepository
 {
@@ -25,5 +26,6 @@ namespace HrSystem.IRepository
         void DeleteRange(IEnumerable<T> entities);
 
         void Update(T entity);
+       
     }
 }

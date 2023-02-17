@@ -1,4 +1,5 @@
-﻿using HrSystem.IRepository;
+﻿using HrSystem.DTOs;
+using HrSystem.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace HrSystem.Repository
             _db = _context.Set<T>();
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(Guid id)
         {
             var entity = await _db.FindAsync(id);
             _db.Remove(entity);

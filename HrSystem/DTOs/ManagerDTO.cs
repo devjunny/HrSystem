@@ -15,6 +15,9 @@ namespace HrSystem.DTOs
         public string address { get; set; }
     }
 
+    public class UpdateManagerDTO : CreateManagerDTO
+    { 
+    }
 
 
     public class ManagerDTO : CreateManagerDTO
